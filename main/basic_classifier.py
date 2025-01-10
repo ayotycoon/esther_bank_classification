@@ -1,23 +1,18 @@
 import csv
-import os
 from typing import Any, List
 
 import matplotlib.pyplot as plt
 import numpy as np
-import seaborn as sns
 import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.feature_selection import chi2
 from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import confusion_matrix
 from sklearn.model_selection import cross_val_score
 from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.svm import LinearSVC
-from typing_extensions import Unpack
 
 
 class BasicClassifier:

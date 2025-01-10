@@ -1,9 +1,10 @@
-from flask import Flask, render_template, jsonify
+from flasgger import Swagger
+from flask import Flask, jsonify
 from flask import request
 
 from main.basic_classifier import classifierInstance
 from main.bootstrap import Bootstrap
-from flasgger import Swagger
+
 app = Flask(__name__)
 swagger = Swagger(app)
 
